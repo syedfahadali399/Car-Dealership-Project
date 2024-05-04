@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/charts.css/dist/charts.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700|Open+Sans:400,700" rel="stylesheet">
+  <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+  <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+</head>    
+<body>
+  <!-- Nav-var  -->
+  <nav>
+    <div class="nav-bar">
+      <i class='bx bx-menu sidebarOpen' ></i>
+      <span class="logo navLogo"><a class="dealership" href="#">Car Dealership</a></span>
+
+      
+      <div class="menu">
+        <div class="logo-toggle">
+          <span class="logo"><a href="#">Car Dealership</a></span>
+           <i class='bx bx-x siderbarClose'></i>
+        </div>
+
+        <ul class="nav-links">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Cars</a></li>
+          <li><a href="#">Our Founder</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Me</a></li>
+        </ul>
+      </div>
+
+      <div class="darkLight-searchBox">
+        <div class="dark-light">
+          <i class='bx bx-moon moon'></i>
+          <i class='bx bx-sun sun'></i>
+      </div>
+
+      <div class="searchBox">
+        <div class="searchToggle">
+          <i class='bx bx-x cancel'></i>
+          <i class='bx bx-search search'></i>
+      </div>
+
+      <div class="search-field">
+        <input type="text" placeholder="Search...">
+        <i class='bx bx-search'></i>
+      </div>
+    </div>
+  </nav>
+
+  <!--Landing Page  -->
+  <div class="container-1">
+      <div class="info">
+        <div class="wrapper">
+          <h2 class="bg" id="animation-h2">Find Car For Sale and Rent Near For You</h2>
+          <svg width="0" height="0">
+            <filter id="f" x="-50%" y="-200%" width="200%" height="500%" primitiveUnits="objectBoundingBox">
+              <feGaussianBlur stdDeviation=".025 .2"></feGaussianBlur>
+              <feColorMatrix type="saturate" values="1.3"></feColorMatrix>
+              <feBlend in="SourceGraphic"></feBlend>
+            </filter>
+          </svg>
+          <h1 class="fg animation-h1">Find Your Perfect Car</h1>
+        </div>
+        <h3 class="info-h3">
+          <div class="searchBoxs-2">
+            <input class="searchInputs-2" type="texts" name="" placeholder="Search something">
+            <button class="searchButtons-2" href="#">
+            <i style="font-size: 20px; font-weight: 900;" class="bi bi-search"></i>
+            </button>
+          </div>
+        </h3>
+        <h4 class="info-h4">Or Browse Featured Model</h4>
+        <div class="list-car">
+          <button class="btn-1 btn-animation"><a href="">LUXURY CAR</a></button>
+          <button class="btn-donate" id="btn-animation"><a href="">ELECTRIC CAR</a></button>
+          <button class="shadow__btn btn-animation-3"><a href="">SPORT CAR</a></button>      
+        </div>
+        </div>
+      </div>
+  </div>
+  <div class="seperations"></div>
+    
+  <!-- Slider Tool -->
+  <div class="slider" id="slider" style="--img-prev:url(https://lh3.googleusercontent.com/aC9nyW5dhaYFmWD8fcf8DApjpH08eHEkbCHqmUPHRQ5T3jK-QyNKZYVMehmrvyPdEA_KxWvgZ3_kyOOYOAv99Ow3UoKSvEloleVKGSfLOwOyDV3Q6Dwi1G-NYoa9-t_ofmmskE6BYnVIOnIz2HWlMcijzIEwvKAL_R4z63DaLgG0z_OcGiSQHunwGAPXrBQUv42ZXuIMODq4zxDHczSxJ72b0-_udtdQK3JuT2X8nXCwFoF7GxmOpzXS0H5f50DuCbXoXcx-O7bgBMCXZdMpTxB27-wdXeLmxpYUySXgjSN2NAKmK16DmGLYvw5tMlrqwb8h4MJEEbXjP1pjPxXsahb7UZseEGyn80uLjATANJvusyJWCtzkkxYXPz-yI1rDvfEJKe2eyA-5AvFlzFBSwBMASn8f7mXinUrXMMREkJQjoi89NfZ91G7253OEVQOqcWxddiYtcHCO5v6Pl3QfV2SUTWXgggscDSY2ezjSPpYERNTXnIM_aCyWmIG7ybrfqOB0eVYBAgynyuPVbjd4KuZWZq2Dfu33HX1RuPKglbOuZGD1QbpJnruvUVkAmjDXI40ENN7X=w1600-h766);"> 
+     <div class="slider__content" id="slider-content">
+       <div class="slider__images">
+         <div class="slider__images-item slider__images-item--active" data-id="1"><img src="slider.pics/hero1.jpg.jpg"/></div>
+         <div class="slider__images-item" data-id="2"><img src="slider.pics/hero2.jpg.webp"/></div>
+         <div class="slider__images-item" data-id="3"><img src="slider.pics/hero3.jpg.jpg"/></div>
+         <div class="slider__images-item" data-id="4"><img src="slider.pics/hero4.jpg.webp"/></div>
+         <div class="slider__images-item" data-id="5"><img src="slider.pics/hero5.jpg.jpg"/></div>
+         <div class="slider__images-item" data-id="6"><img src="slider.pics/hero6.jpg.jpg"/></div>
+         <div class="slider__images-item" data-id="7"><img src="slider.pics/hero7.jpg.jpg"/></div>
+       </div>
+       <div class="slider__text">
+         <div class="slider__text-item slider__text-item--active" data-id="1">
+           <div class="slider__text-item-head">
+             <h3>Bugatti Chiron</h3>
+           </div>
+           <div class="slider__text-item-info">
+             <p>“Starting From $3,000,000”</p>
+           </div>
+         </div>
+         <div class="slider__text-item" data-id="2">
+           <div class="slider__text-item-head">
+             <h3>La Ferrari</h3>
+           </div>
+           <div class="slider__text-item-info">
+             <p>“Starting From $3,055,417”</p>
+           </div>
+         </div>
+         <div class="slider__text-item" data-id="3">
+           <div class="slider__text-item-head">
+             <h3>Mclaren 720s</h3>
+           </div>
+           <div class="slider__text-item-info">
+             <p>“Starting From $310,000</p>
+           </div>
+         </div>
+         <div class="slider__text-item" data-id="4">
+           <div class="slider__text-item-head">
+             <h3>Tesla</h3>
+           </div>
+           <div class="slider__text-item-info">
+             <p>“Starting From $40,000”</p>
+           </div>
+         </div>
+         <div class="slider__text-item" data-id="5">
+           <div class="slider__text-item-head">
+             <h3>BMW M5</h3>
+           </div>
+           <div class="slider__text-item-info">
+             <p>“Starting From $117,000”</p>
+           </div>
+         </div>
+         <div class="slider__text-item" data-id="6">
+           <div class="slider__text-item-head">
+             <h3>Ford Mustang</h3>
+           </div>
+           <div class="slider__text-item-info">
+             <p>“Starting From $32,000”</p>
+           </div>
+         </div>
+         <div class="slider__text-item" data-id="7">
+           <div class="slider__text-item-head">
+             <h3>Audi R8</h3>
+           </div>
+           <div class="slider__text-item-info">
+             <p>“Starting From $225,000”</p>
+           </div>
+         </div>
+       </div>
+     </div>
+    <div class="slider__nav">
+      <div class="slider__nav-arrows">
+        <div class="slider__nav-arrow slider__nav-arrow--left" id="left">to left</div>
+        <div class="slider__nav-arrow slider__nav-arrow--right" id="right">to right</div>
+      </div>
+      <div class="slider__nav-dots" id="slider-dots">
+        <div class="slider__nav-dot slider__nav-dot--active" data-id="1"></div>
+        <div class="slider__nav-dot" data-id="2"></div>
+        <div class="slider__nav-dot" data-id="3"></div>
+        <div class="slider__nav-dot" data-id="4"></div>
+        <div class="slider__nav-dot" data-id="5"></div>
+        <div class="slider__nav-dot" data-id="6"></div>
+        <div class="slider__nav-dot" data-id="7"></div>
+      </div>
+    </div>
+  </div> 
+  <!-- Landing Page-2 -->
+  <div class="seperations"></div>
+    <div class="about-car">
+      <div class="about-cars">
+        <h1 class="animation-left">Online, In Person Everywhere</h1>
+        <p class="animation-left">Choose from thousands of vehicles from multiple brands and buy online with Click & Drive, or visit us at one of our dealerships today.</p>
+        <button class="about-car-btn animation-left" >
+          <span class="text">Get Started</span>
+        </button>
+      </div>
+      <div class="about-car-image animation-right">
+       <img src="landingpage2.pic/pic.jpg.jpg" alt="Image" width="660px" height="600px">
+      </div> 
+    </div>
+  </div>
+
+  <!-- Comapany Choose -->\
+  <div class="seperation"></div>
+  <div class="car-rent-buy">
+    <div class="card-1 animation-left">
+      <div class="content-1">
+        <p class="heading-1">Looking For a Car</p>
+        <p class="para-1">
+          Our cars are delivered fully-registered with all requirements completed. We’ll deliver your car wherever you are
+        </p>
+        <button class="btn">Read more</button>
+      </div>
+    </div>
+    <div class="card-1 animation-right">
+      <div class="content-1">
+        <p class="heading-1">Want To Selling a Car</p>
+        <p class="para-1">
+          Receive the absolute best value for your trade-in vehicle. We even handle all paperwork. Schedule appointment!
+        </p>
+        <button class="btn">Read more</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="seperation"></div>
+  <!-- Car Comapany -->
+  <h1 class="company-header">Browse By Brands</h1>
+  <div class="company-chioces">
+    <div class="brands animation-left"><img src="logo.png/logo1.png.png" alt="Logo" width="30px" height="30px">Lamborgini</div>
+    <div class="brands animation-right"><img src="logo.png/logo2.png.png" alt="Logo" width="30px" height="30px">Ferrari</div>
+    <div class="brands animation-left"><img src="logo.png/logo3.png.png" alt="Logo" width="70px" height="30px">Pagani</div>
+    <div class="brands animation-right"><img src="logo.png/logo4.png.png" alt="Logo" width="30px" height="30px">BMW</div>
+    <div class="brands animation-left"><img src="logo.png/logo5.png.png" alt="Logo" width="35px" height="35px">Mercedes</div>
+    <div class="brands animation-right"><img src="logo.png/logo6.png.png" alt="Logo" width="50px" height="30px">Mclaren</div>
+    <div class="brands animation-left"><img src="logo.png/logo7.png.png" alt="Logo" width="40px" height="30px">Buggatti</div>
+    <div class="brands animation-right"><img src="logo.png/logo8.png.png" alt="Logo" width="30px" height="30px">Rolls Royes</div>
+  </div>
+  <!-- Car collection -->
+        <div class="seperation"></div>
+        <h1 class="company-header">Realted Listing</h1>
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
+          <!-- 1st Page -->
+          <div class="relative mx-auto w-full animation-left">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/1.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              United States
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+                 Central Park, New York
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                A-1 Street 1
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+                Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                1226 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="25" height="25" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/> 
+              <span class="mt-2 xl:mt-0">
+                2023
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+        
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                Mickel
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">4,000,000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+ 
+          <!-- 2nd Page -->
+          <div class="relative mx-auto w-full animation-right">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/2.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              Italy
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+              Garbatella, Rome
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                Z-17 Street 25
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+               Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                13251 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="25" height="25" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/> 
+              <span class="mt-2 xl:mt-0">
+                2016
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+        
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                Lora
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">1,500,000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+        
+          <!-- Page 3 -->
+          <div class="relative mx-auto w-full animation-left">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/3.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              Pakistan
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+              Defence Phase-2, Karachi
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                B-17 Street 15
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+                Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                3500 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="25" height="25" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/> 
+              <span class="mt-2 xl:mt-0">
+                2022
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+        
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                Fahad
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">90,000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+        
+          <!-- Page 4 -->
+          <div class="relative mx-auto w-full animation-right">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/4.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              UAE
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+               Ajamn, Dubai
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                P-17 Street 7
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+                Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                8200 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="25" height="25" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/> 
+              <span class="mt-2 xl:mt-0">
+                2017
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+        
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                Pitar
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">82000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+        </div>
+
+        <!-- Page 5 -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 w-full">
+          <div class="relative mx-auto w-full animation-left">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/5.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              Kuwait
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+               Hawally, Kuwait City
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                A-24 Street 12
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+                Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                6500 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <span class="mt-2 xl:mt-0">
+                2023
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+        
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                Sheik-Al-Rashid
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">160,000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+
+          <!-- page 6 -->
+          <div class="relative mx-auto w-full animation-right">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/6.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              Japan
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+               Adachi, Tokyo
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                U-235 Street 36
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+                Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                12,000 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="25" height="25" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>
+              <span class="mt-2 xl:mt-0">
+                2020
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+        
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                Micke
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">400,000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+        
+          <!-- Page 7 -->
+          <div class="relative mx-auto w-full animation-left">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/7.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              UK
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+              Edgware, London
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                L-615 Street 15
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+                Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                3425 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="25" height="25" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>
+              <span class="mt-2 xl:mt-0">
+                2022
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+        
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                Carlie Russell
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">1,000,000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+        
+  <!-- Page 8 -->
+  <div class="relative mx-auto w-full animation-right">
+          <a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
+            <div class="shadow p-4 rounded-lg bg-white">
+            <div class="flex justify-center relative rounded-lg overflow-hidden h-52">
+              <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
+              <div class="absolute inset-0 bg-black opacity-10"></div>
+              <img src="car.collection/8.car.collection.jpg" alt="">
+              </div>
+        
+              <div class="absolute flex justify-center bottom-0 mb-3">
+              </div>
+        
+              <span class="absolute top-0 left-0 inline-flex mt-3 ml-3 px-3 py-2 rounded-lg z-10 bg-red-500 text-sm font-medium text-white select-none">
+              Featured
+              </span>
+            </div>
+        
+            <div class="mt-4">
+              <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+              United States
+              </h2>
+              <p class="mt-2 text-sm text-gray-800 line-clamp-1" title="New York, NY 10004, United States">
+              Beverly Hills, Los Angeles
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
+              <span class="mt-2 xl:mt-0">
+                F-16 Address
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/engine.png" alt="engine"/>
+              <span class="mt-2 xl:mt-0">
+                Automatic
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="20" height="25" src="https://img.icons8.com/ios/50/speedometer.png" alt="speedometer"/>
+              <span class="mt-2 xl:mt-0">
+                6000 Km
+              </span>
+              </p>
+              <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
+              <img class="inline-flex-img" width="25" height="25" src="https://img.icons8.com/ios/50/car--v1.png" alt="car--v1"/>
+              <span class="mt-2 xl:mt-0">
+                2021
+              </span>
+              </p>
+            </div>
+        
+            <div class="grid grid-cols-2 mt-8">
+              <div class="flex items-center">
+              <div class="relative">
+                <div class="rounded-full w-6 h-6 md:w-8 md:h-8 bg-gray-200"></div>
+                <span class="absolute top-0 right-0 inline-block w-3 h-3 bg-primary-red rounded-full"></span>
+              </div>
+              <p class="ml-2 text-gray-800 line-clamp-1">
+                John Doe
+              </p>
+              </div>
+        
+              <div class="flex justify-end">
+              <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+                <span class="text-lg">165,000</span>$
+              </p>
+              </div>
+            </div>
+            </div>
+          </a>
+          </div>
+        </div>
+
+  <!-- Customer Trust Page -->  
+  <div class="seperation"></div>
+  <h1 class="company-trust animation-left">Why Choose Us</h1>
+  <div class="trust">
+    <div class="trust-1 btn-animation">
+      <h4><i class="bi bi-speedometer2"></i>Wide Range Of Brands</h4>
+      <p>With a robust selection of popular vehicles on hand, as well as leading vehicles from BMW and Ford.</p>
+    </div>
+    <div class="trust-1 card-animation">
+      <h4><i class="bi bi-person-arms-up"></i>Trusted By Thousands</h4>
+     <p>10 new offers every day. 350 offers on site, trusted by a community of thousands of users.</p>
+    </div>
+    <div class="trust-1 btn-animation-3">
+      <h4><i class="bi bi-box-arrow-in-up-right"></i>Service And Maintained</h4>
+      <p>Our stress-free finance department that can find financial solutions to save you money.</p>
+    </div>
+  </div>  
+
+  <!-- Countdown -->
+  <div class="seperation"></div>
+  <h2 class="h2-responsive animation-left">Overall Report</h2>
+  <div class="container-2">
+    <div class="row">
+      <div class="col-md-3 col-sm-6 animation-left">
+        <div class="counter">
+          <div class="counter-icon">
+            <i class="fa fa-globe"></i>
+          </div>
+          <span class="counter-value">7567</span>
+          <h3>Car Sales</h3>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 animation-right">
+        <div class="counter purple">
+          <div class="counter-icon">
+            <i class="fa fa-rocket"></i>
+          </div>
+          <span class="counter-value">1345</span>
+          <h3>Dealer Reviews</h3>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 animation-left">
+        <div class="counter blue">
+          <div class="counter-icon">
+            <i class="fa fa-rocket"></i>
+          </div>
+          <span class="counter-value">3245</span>
+          <h3>Visit Per Day</h3>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-6 animation-right">
+        <div class="counter green">
+          <div class="counter-icon">
+            <i class="fa fa-rocket"></i>
+          </div>
+          <span class="counter-value">945</span>
+          <h3>Verified Dealers</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Peoples Reviews -->
+  <div class="seperation"></div>
+  <h2 class="h2-responsive animation-left">Customer Reviews</h2>
+  <div class="main">
+    <div class="testimonials">
+      <input type="radio" name="testimonial" id="input-testimonial1" checked>
+      <input type="radio" name="testimonial" id="input-testimonial2">
+      <input type="radio" name="testimonial" id="input-testimonial3">
+      <input type="radio" name="testimonial" id="input-testimonial4">
+      <div class="testimonials-inner">
+        <div class="testimonial">
+          <div class="testimonial-photo">
+            <div class="photo-background"></div>
+            <div class="photo-author"></div>
+          </div>
+          <div class="testimonial-text">
+            <p>My car buying experience was excellent, characterized by a seamless process from start to finish. The dealership staff was friendly, knowledgeable, and not pushy, which made decision-making comfortable</p>
+          </div>
+          <div class="testimonial-author">Henry Schwengle</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-photo">
+            <div class="photo-background"></div>
+            <div class="photo-author"></div>
+          </div>
+          <div class="testimonial-text">
+            <p>Purchasing a car from this dealership was an absolute pleasure. The staff was courteous, knowledgeable, and attentive, making the entire process smooth and stress-free. They took the time to understand my needs and preferences.</p>
+          </div>
+          <div class="testimonial-author">Mr. George Robert</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-photo">
+            <div class="photo-background"></div>
+            <div class="photo-author"></div>
+          </div>
+          <div class="testimonial-text">
+            <p>Purchasing a car from this dealership was a truly positive experience from start to finish. The staff was friendly, knowledgeable, and never pushy, allowing me to explore options at my own pace. They went above and beyond to understand my needs.</p>
+          </div>
+          <div class="testimonial-author">Doodle Wobblepants</div>
+        </div>
+        <div class="testimonial">
+          <div class="testimonial-photo">
+            <div class="photo-background"></div>
+              <div class="photo-author"></div>
+            </div>
+            <div class="testimonial-text">
+              <p>Purchasing a car from this dealership was a delightful experience, marked by professionalism and transparency. The staff were friendly, knowledgeable, and never pressuring, guiding me through various options.</p>
+            </div>
+            <div class="testimonial-author">John "Vroom" Cena</div>
+          </div>
+        </div>
+        <div class="testimonials-arrows">
+          <div class="arrow arrow-left">
+            <label for="input-testimonial1"></label>
+            <label for="input-testimonial2"></label>
+            <label for="input-testimonial3"></label>
+            <label for="input-testimonial4"></label>
+            <span></span>
+          </div>
+          <div class="arrow arrow-right">
+            <label for="input-testimonial1"></label>
+            <label for="input-testimonial2"></label>
+            <label for="input-testimonial3"></label>
+            <label for="input-testimonial4"></label>
+            <span></span>
+         </div>
+       </div>
+       <div class="testimonials-bullets">
+         <label for="input-testimonial1">
+           <div class="bullet">
+              <div>
+                <span></span>
+              </div>
+            </div>
+          </label>
+          <label for="input-testimonial2">
+              <div class="bullet">
+                <div>
+                  <span></span>
+               </div>
+              </div>
+           </label>
+            <label for="input-testimonial3">
+              <div class="bullet">
+                <div>
+                  <span></span>
+                </div>
+              </div>
+            </label>
+            <label for="input-testimonial4">
+              <div class="bullet">
+                <div>
+                  <span></span>
+                </div>
+              </div>
+            </label>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="seperation"></div>
+        
+ <footer class="relative bg-blueGray-200 pt-8 pb-6">
+   <div class="container mx-auto px-4">
+     <div class="flex flex-wrap text-left lg:text-left">
+       <div class="w-full lg:w-6/12 px-4">
+         <h4 class="text-3xl fonat-semibold text-blueGray-700">Let's keep in touch!</h4>
+         <h5 class="text-lg mt-0 mb-2 text-blueGray-600">
+           Find us on any of these platforms, we respond 1-2 business days.
+         </h5>
+         <div class="mt-6 lg:mb-0 mb-6">
+           <button class="bg-white text-lightBlue-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+             <i class="fab fa-twitter"></i></button><button class="bg-white text-lightBlue-600 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+             <i class="fab fa-facebook-square"></i></button><button class="bg-white text-pink-400 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+             <i class="fab fa-dribbble"></i></button><button class="bg-white text-blueGray-800 shadow-lg font-normal h-10 w-10 items-center justify-center align-center rounded-full outline-none focus:outline-none mr-2" type="button">
+             <i class="fab fa-github"></i>
+             <!-- <i class="fa-brands fa-youtube"></i> -->
+           </button>
+         </div>
+       </div>
+       <div class="w-full lg:w-6/12 px-4">
+         <div class="flex flex-wrap items-top mb-6">
+           <div class="w-full lg:w-4/12 px-4 ml-auto">
+             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Useful Links</span>
+             <ul class="list-unstyled">
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/presentation?ref=njs-profile">About Us</a>
+               </li>
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://blog.creative-tim.com?ref=njs-profile">Youtube</a>
+               </li>
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.github.com/creativetimofficial?ref=njs-profile">instagram</a>
+               </li>
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://www.creative-tim.com/bootstrap-themes/free?ref=njs-profile">Linked In</a>
+               </li>
+             </ul>
+           </div>
+           <div class="w-full lg:w-4/12 px-4">
+             <span class="block uppercase text-blueGray-500 text-sm font-semibold mb-2">Other Resources</span>
+             <ul class="list-unstyled">
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://github.com/creativetimofficial/notus-js/blob/main/LICENSE.md?ref=njs-profile">Dealership Linces</a>
+               </li>
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/terms?ref=njs-profile">Terms &amp; Conditions</a>
+               </li>
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/privacy?ref=njs-profile">Privacy Policy</a>
+               </li>
+               <li>
+                 <a class="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="https://creative-tim.com/contact-us?ref=njs-profile">Contact Us</a>
+               </li>
+             </ul>
+           </div>
+         </div>
+      </div>
+    </div>
+    <hr class="my-6 border-blueGray-300">
+    <div class="flex flex-wrap items-center md:justify-between justify-center">
+     <div class="w-full md:w-4/12 px-4 mx-auto text-center">
+        <div class="text-sm text-blueGray-500 font-semibold py-1">
+          Copyright © <span id="get-current-year">2024</span><a href="https://www.creative-tim.com/product/notus-js" class="text-blueGray-500 hover:text-gray-800" target="_blank"> Powered By
+          <a href="https://www.creative-tim.com?ref=njs-profile" class="text-blueGray-500 hover:text-blueGray-800">Fahad Developer</a>.
+        </div>
+      </div>
+     </div>
+   </div>
+ </footer>
+ <h2 class="ff">csfdgdgdg</h2>
+
+ <!-- Javascript -->
+ <script src="index.js"></script>
+ <script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+ <script defer src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js"></script>
+ <script src="https://cdn.tailwindcss.com"></script>   
+</body>  
+</html>
